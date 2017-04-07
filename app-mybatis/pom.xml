@@ -17,6 +17,16 @@
 
     <build>
         <plugins>
+        	<!-- 设置编译环境 ，默认1.5，影响导入该项目时候的JRE System Library-->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    <version>3.1</version>
+			    <configuration>
+			         <source>1.7</source>
+			         <target>1.7</target>
+			    </configuration>
+			</plugin>
             <!-- 用于自动生成mybatis映射文件和dao -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
