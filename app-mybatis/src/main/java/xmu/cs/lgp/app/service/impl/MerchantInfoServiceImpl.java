@@ -22,21 +22,21 @@ public class MerchantInfoServiceImpl implements MerchantInfoService {
 
     @Resource
     HelloWorldHandler helloWorldHandler;
-    
+
     @Autowired
     IUserDao userDao;
-    
+
     @Override
     public void add() {
         PrintUtil.printClassMsg(this.getClass(), "添加一个商户");
-        
+
         helloWorldHandler.saySomething("我爱你", "米吐");
-        
+
         User user = new User();
         user.setUsername("liguangpu");
         user.setUserage(28);
         user.setUniversity("xmu");
-        
+
         userDao.insert(user);
     }
 

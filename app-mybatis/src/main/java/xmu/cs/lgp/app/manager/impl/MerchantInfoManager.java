@@ -13,13 +13,13 @@ import xmu.cs.lgp.app.service.MerchantInfoService;
 
 @Service()
 public class MerchantInfoManager {
-    
+
     @Resource
     MerchantInfoService merchantInfoService;
-    
+
     public MerchantInfoManager() {
     }
-    
+
     public void curd() {
         merchantInfoService.add();
         merchantInfoService.delete();

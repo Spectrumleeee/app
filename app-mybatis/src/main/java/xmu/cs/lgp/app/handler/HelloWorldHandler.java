@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class HelloWorldHandler {
-    
+
     public HelloWorldHandler() {
         PrintUtil.printClassMsg(this.getClass(), "初始化成功");
     }
@@ -18,10 +18,10 @@ public class HelloWorldHandler {
     public void destroy() {
         PrintUtil.printClassMsg(this.getClass(), "释放成功");
     }
-    
+
     public void saySomething(String youSay, String iSay) {
         PrintUtil.printClassMsg(this.getClass(), "你说：" + youSay);
         PrintUtil.printClassMsg(this.getClass(), "我说：" + iSay);
     }
-    
+
 }
